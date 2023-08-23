@@ -3,11 +3,16 @@ import { Observable, Subject } from 'rxjs';
 import { HeroService } from '../hero.service';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { Hero } from '../hero';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
 
 @Component({
   selector: 'app-hero-search',
   templateUrl: './hero-search.component.html',
-  styleUrls: ['./hero-search.component.css']
+  styleUrls: ['./hero-search.component.css'],
+  standalone: true,
+  imports: [BrowserModule, FormsModule, AppRoutingModule]
 })
 export class HeroSearchComponent implements OnInit {
   heroes$: Observable<Hero[]>;
