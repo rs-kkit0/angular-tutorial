@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CommonModule } from '@angular/common';
 import { CompanyFormComponent } from './company/company-form/company-form.component';
+import { FormValueRendererComponent } from './company/form-value-renderer/form-value-renderer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CompanyFormComponent } from './company/company-form/company-form.compon
     DashboardComponent,
     HeroSearchComponent,
     CompanyFormComponent,
+    FormValueRendererComponent,
   ],
   imports: [
     BrowserModule,
