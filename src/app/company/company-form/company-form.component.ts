@@ -40,6 +40,11 @@ export class CompanyFormComponent implements OnInit {
     return this.formGroup.get('employees') as FormArray;
   }
 
-  addEmployee() {};
+  addEmployee() {
+    this.employees.push(this._fb.group({
+      name: ['', [Validators.required]],
+      surname: ['', [Validators.required]]
+    }))
+  };
 
 }
