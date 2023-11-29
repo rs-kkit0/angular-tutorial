@@ -15,6 +15,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CommonModule } from '@angular/common';
 import { CompanyFormComponent } from './company/company-form/company-form.component';
 import { FormValueRendererComponent } from './company/form-value-renderer/form-value-renderer.component';
+import { AddressFormComponent } from './company/address-form/address-form.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormValueRendererComponent } from './company/form-value-renderer/form-v
     HeroSearchComponent,
     CompanyFormComponent,
     FormValueRendererComponent,
+    AddressFormComponent,
   ],
   imports: [
     BrowserModule,
